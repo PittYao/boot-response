@@ -1,0 +1,17 @@
+GET http://localhost:8082/
+Accept: application/json
+
+###
+
+GET http://localhost:8082/list
+Accept: application/json
+
+###
+
+GET http://localhost:8082/error
+Accept: application/json
+
+###
+
+GET http://localhost:8082/errorCustomize
+Accept: application/json
