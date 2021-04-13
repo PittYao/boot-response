@@ -1,17 +1,23 @@
+# 测试包装类普通异常
 GET http://localhost:8082/
 Accept: application/json
 
 ###
-
+# 测试包装类返回list
 GET http://localhost:8082/list
 Accept: application/json
 
 ###
+# 测试统一返回list
+GET http://localhost:8082/listString
+Accept: application/json
 
+###
+# 测试统一返回自定义异常
 GET http://localhost:8082/error
 Accept: application/json
 
 ###
-
+# 测试统一返回自定义异常
 GET http://localhost:8082/errorCustomize
 Accept: application/json

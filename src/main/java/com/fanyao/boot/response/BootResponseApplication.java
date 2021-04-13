@@ -31,6 +31,14 @@ public class BootResponseApplication {
         return CommonResult.success("查询成功", strings);
     }
 
+    @GetMapping("/listString")
+    public List<String> testListString() {
+        List<String> strings = new ArrayList<>();
+        strings.add("未统一响应体1");
+        strings.add("未统一响应体2");
+        return strings;
+    }
+
     @GetMapping("/error")
     public String testString() {
         throw new BusinessException(ResultEnum.ERROR);
